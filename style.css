@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
     background-color: #111;
     color: #fff;
 }
@@ -20,48 +19,43 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
 }
 
 main {
-    padding: 40px 20px;
+    padding: 20px;
 }
 
 .hero .placeholder,
-.menu-grid .placeholder {
+.menu-item {
     background-color: #fff;
     color: #111;
     text-align: center;
-    padding: 60px 0;
-    margin: 20px 0;
+    padding: 20px;
+    margin: 10px;
     border-radius: 8px;
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
 }
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #fff;
-    color: #111;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
 }
 
 footer {
     background-color: #222;
     padding: 20px;
     text-align: center;
-    font-size: 0.9rem;
 }
