@@ -32,26 +32,35 @@ main {
 }
 
 .hero .placeholder,
-.menu-item {
+.menu-item .placeholder {
     background-color: #fff;
-    color: #111;
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
+    height: 150px;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.menu-item img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-top: 10px;
+.about p {
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
 }
 
 footer {
