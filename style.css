@@ -36,9 +36,9 @@ body {
 }
 .animated-waves {
   position: absolute;
-  width: 400%;
+  width: 150%;
   height: 100%;
-  animation: waveSlide 30s linear infinite;
+  animation: waveSlide 26s linear infinite;
 }
 @keyframes waveSlide {
   0% { transform: translateX(0); }
