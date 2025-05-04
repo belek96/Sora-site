@@ -38,7 +38,7 @@ body {
   position: absolute;
   width: 150%;
   height: 100%;
-  animation: waveSlide 26s linear infinite;
+  animation: waveSlide 13s linear infinite;
 }
 @keyframes waveSlide {
   0% { transform: translateX(0); }
