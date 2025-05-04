@@ -36,13 +36,18 @@ body {
 }
 .animated-waves {
   position: absolute;
-  width: 400%;
+  width: 200%;
   height: 100%;
-  animation: waveSlide 20s linear infinite;
+  animation: waveSlide 20s linear infinite, wavePulse 4s ease-in-out infinite alternate;
 }
 @keyframes waveSlide {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% { transform: translateX(0) scaleX(1); }
+  100% { transform: translateX(-50%) scaleX(1); }
+}
+@keyframes wavePulse {
+  0% { transform: translateX(0) scaleX(1); }
+  50% { transform: translateX(0) scaleX(1.2); }
+  100% { transform: translateX(0) scaleX(1); }
 }
 .chef-section {
   display: flex;
