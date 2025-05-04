@@ -2,45 +2,43 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background: #4a2c2a;
-    color: #f5e6c8;
+    background: #4b2c2c;
+    color: #f5f5f5;
+}
+
+header {
     text-align: center;
+    padding: 2em;
 }
 
-.hero h1 {
-    margin: 20px 0 10px;
-    font-size: 24px;
-    color: #ffd700;
-}
-
-.hero p {
-    margin: 0 0 20px;
-}
-
-.welcome {
-    margin: 20px;
-}
-
-.wave-container {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
+header h1 {
+    color: #FFD700;
 }
 
 .wave {
-    background: #3b1f1d;
-    height: 100%;
+    position: relative;
     width: 200%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100" viewBox="0 0 800 100"><path fill="%233b1f1d" d="M0 50 Q100 0 200 50 T400 50 T600 50 T800 50 V100 H0 Z"/></svg>');
-    background-repeat: repeat-x;
-    animation: waveMove 10s linear infinite;
+    height: 50px;
+    background: repeating-linear-gradient(
+        -45deg,
+        #3a1f1f,
+        #3a1f1f 10px,
+        #4b2c2c 10px,
+        #4b2c2c 20px
+    );
+    animation: waveMove 5s linear infinite;
 }
 
 @keyframes waveMove {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.welcome {
+    padding: 2em;
+    text-align: center;
+}
+
+.welcome h2 {
+    color: #FFD700;
 }
