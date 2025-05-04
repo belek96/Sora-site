@@ -1,43 +1,46 @@
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #4b2e2e;
-  color: #f8e8c0;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: #4a2c2a;
+    color: #f5e6c8;
+    text-align: center;
 }
-header, main, footer {
-  padding: 20px;
-  text-align: center;
+
+.hero h1 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+    color: #ffd700;
 }
-h1, h2 {
-  color: #ffd700;
+
+.hero p {
+    margin: 0 0 20px;
 }
-.waves-container {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
+
+.welcome {
+    margin: 20px;
 }
-.animated-waves {
-  position: absolute;
-  width: 400%;
-  height: 150%;
+
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
 }
-.animated-waves.back {
-  animation: waveSlideBack 20s linear infinite;
+
+.wave {
+    background: #3b1f1d;
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100" viewBox="0 0 800 100"><path fill="%233b1f1d" d="M0 50 Q100 0 200 50 T400 50 T600 50 T800 50 V100 H0 Z"/></svg>');
+    background-repeat: repeat-x;
+    animation: waveMove 10s linear infinite;
 }
-.animated-waves.front {
-  animation: waveSlideFront 10s linear infinite;
-}
-@keyframes waveSlideBack {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-@keyframes waveSlideFront {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-footer {
-  font-size: 0.9em;
+
+@keyframes waveMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
