@@ -21,11 +21,20 @@ h1, h2 {
 }
 .animated-waves {
   position: absolute;
-  width: 300%;
-  height: 300%;
-  animation: waveSlide 13s linear infinite;
+  width: 400%;
+  height: 150%;
 }
-@keyframes waveSlide {
+.animated-waves.back {
+  animation: waveSlideBack 20s linear infinite;
+}
+.animated-waves.front {
+  animation: waveSlideFront 10s linear infinite;
+}
+@keyframes waveSlideBack {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes waveSlideFront {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
