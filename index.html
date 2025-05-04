@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sora</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sora</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Sora</h1>
-    <p class="tagline">Откройте вкус Японии. В Sora мы верим, что суши — это больше, чем еда. Это искусство, история и удовольствие от каждого кусочка. Мы дарим вам аутентичный вкус, качество и заботу о деталях — чтобы каждый заказ становился особенным.</p>
+<header class="header">
+  <h1 class="main-title">Настоящий вкус японской кухни</h1>
+  <p class="subtitle">Попробуйте лучшие блюда, приготовленные с мастерством и изюком</p>
 </header>
+<nav class="nav">
+  <button>Суши</button>
+  <button>Горячие блюда</button>
+  <button>Супы</button>
+  <button>Салаты</button>
+  <button>Закуски</button>
+</nav>
 <main>
-    <section class="hero">
-        <div class="placeholder">Hero Banner</div>
-    </section>
-
-    <section class="menu-grid">
-        <a href="sushi.html" class="menu-item"><div class="placeholder"><img src="images/nigiri-salmon.png" alt="Нигири с лососем"></div><h3>Суши</h3></a>
-        <a href="hot.html" class="menu-item"><div class="placeholder"></div><h3>Горячие блюда</h3></a>
-        <a href="soups.html" class="menu-item"><div class="placeholder"></div><h3>Супы</h3></a>
-        <a href="salads.html" class="menu-item"><div class="placeholder"></div><h3>Салаты</h3></a>
-        <a href="snacks.html" class="menu-item"><div class="placeholder"></div><h3>Закуски</h3></a>
-    </section>
+  <section class="chef-section slide-in">
+    <img src="chef.jpg" alt="Шеф Такеши" class="chef-img">
+    <div class="chef-text">
+      <h2>Добро пожаловать в Sora.</h2>
+      <p>Меня зовут Такеши, я ваш шеф.</p>
+      <p>Каждое блюдо здесь — это не просто еда, а история и мастерство.</p>
+      <p>Я гарантирую: вы попробуете настоящий вкус Японии.</p>
+    </div>
+  </section>
+  <section class="menu-grid">
+    <div class="menu-item">Суши
+      <ul>
+        <li>Хенд роллы</li>
+        <li>Нигири (суши)</li>
+        <li>Сашими</li>
+        <li>Опен роллы</li>
+        <li>Ошидзуси</li>
+      </ul>
+    </div>
+    <div class="menu-item">Горячие блюда</div>
+    <div class="menu-item">Супы</div>
+    <div class="menu-item">Салаты</div>
+    <div class="menu-item">Закуски</div>
+  </section>
 </main>
 <footer>
-    <p>&copy; 2025 Sora. Все права защищены.</p>
+  <p>&copy; 2025 Sora. Все права защищены.</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
