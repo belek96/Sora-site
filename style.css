@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: linear-gradient(180deg, #4b2c20, #1a0e05);
-  color: #f3e5ab;
+  color: #f0c75e;
 }
 .header {
   text-align: center;
@@ -37,6 +37,7 @@ body {
 }
 .chef-text {
   max-width: 400px;
+  text-align: center;
 }
 .menu-grid {
   display: grid;
@@ -49,6 +50,8 @@ body {
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+  color: #d4af37;
+  font-weight: 600;
 }
 footer {
   text-align: center;
