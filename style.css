@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(180deg, #4b2c20, #1a0e05);
   color: #f0c75e;
+  overflow-x: hidden;
 }
 .header {
   text-align: center;
@@ -26,6 +27,22 @@ body {
 .subtitle {
   font-size: 1rem;
   margin-top: 0.5rem;
+}
+.waves-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+.animated-waves {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: waveAnimation 8s linear infinite;
+}
+@keyframes waveAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 .chef-section {
   display: flex;
@@ -60,8 +77,4 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.8rem;
-}
-.waves {
-  width: 100%;
-  height: auto;
 }
