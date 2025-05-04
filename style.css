@@ -6,11 +6,11 @@ body {
 }
 .header {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 .main-title {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .subtitle {
   font-size: 1rem;
@@ -21,14 +21,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: all 1s ease;
-}
-.chef-section.show {
-  opacity: 1;
-  transform: translateX(0);
+  padding: 1rem;
 }
 .chef-img {
   width: 150px;
@@ -41,9 +34,9 @@ body {
 }
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .menu-item {
   background: rgba(255, 255, 255, 0.1);
