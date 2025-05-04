@@ -7,8 +7,6 @@ body {
 .header {
   text-align: center;
   padding: 2rem;
-  background: url('waves.png') repeat top center;
-  background-size: cover;
 }
 .main-title {
   font-family: 'Playfair Display', serif;
@@ -18,22 +16,11 @@ body {
   font-size: 1rem;
   margin-top: 0.5rem;
 }
-.nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-.nav button {
-  background: none;
-  border: 1px solid #f3e5ab;
-  color: #f3e5ab;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
 .chef-section {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding: 2rem;
   opacity: 0;
   transform: translateX(100%);
@@ -46,11 +33,14 @@ body {
 .chef-img {
   width: 150px;
   border-radius: 10px;
-  margin-right: 2rem;
+  margin: 1rem;
+}
+.chef-text {
+  max-width: 400px;
 }
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   padding: 2rem;
 }
@@ -59,10 +49,6 @@ body {
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
-}
-.menu-item ul {
-  list-style: none;
-  padding: 0;
 }
 footer {
   text-align: center;
