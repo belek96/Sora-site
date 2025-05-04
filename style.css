@@ -1,18 +1,80 @@
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #4b2e2e;
-  color: #f8e8c0;
   margin: 0;
-  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #4b2c20, #1a0e05);
+  color: #f0c75e;
+  overflow-x: hidden;
 }
-header, main, footer {
-  padding: 20px;
+.header {
   text-align: center;
+  padding: 2rem 1rem;
 }
-h1, h2 {
-  color: #ffd700;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-text {
+  margin-left: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #f0c75e;
+}
+.main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+}
+.subtitle {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.waves-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+.animated-waves {
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  animation: waveSlide 13s linear infinite;
+}
+@keyframes waveSlide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.chef-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.chef-text {
+  max-width: 400px;
+  text-align: left;
+  margin: 1rem;
+}
+.sushi-icon {
+  margin: 1rem;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.menu-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  color: #d4af37;
+  font-weight: 600;
 }
 footer {
-  font-size: 0.9em;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
 }
