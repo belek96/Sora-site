@@ -16,13 +16,13 @@ body {
     position: relative;
     height: 120px;
     background: url('wave.svg') repeat-x;
-    background-size: contain;
-    animation: waveScroll 3s linear infinite;
+    background-size: 200% auto;
+    animation: waveScroll 6s linear infinite;
     opacity: 0.08;
 }
 @keyframes waveScroll {
     0% { background-position-x: 0; }
-    100% { background-position-x: -1200px; }
+    100% { background-position-x: -200%; }
 }
 .welcome {
     text-align: center;
