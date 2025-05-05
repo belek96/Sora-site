@@ -12,23 +12,22 @@ body {
 .hero h1 {
     color: #FFD700;
 }
-.hero p {
-    color: #ddd;
-}
 .wave {
     position: relative;
-    width: 200%;
-    height: 100px;
+    height: 120px;
     background: url('wave.svg') repeat-x;
     background-size: contain;
-    animation: waveMove 3s linear infinite;
-    opacity: 0.1;
+    animation: waveScroll 3s linear infinite;
+    opacity: 0.08;
 }
-@keyframes waveMove {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+@keyframes waveScroll {
+    0% { background-position-x: 0; }
+    100% { background-position-x: -1200px; }
 }
 .welcome {
-    padding: 2em;
     text-align: center;
+    padding: 2em;
+}
+.welcome h2 {
+    color: #FFD700;
 }
