@@ -1,4 +1,11 @@
 
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f0e6;
+    color: #333;
+    position: relative;
+}
 body::before {
     content: "";
     position: fixed;
@@ -10,6 +17,32 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.1;
-    z-index: -1;
+    opacity: 0.06;
+    z-index: -2;
+}
+.hero {
+    text-align: center;
+    padding: 2em;
+}
+.hero h1 {
+    color: #b8860b;
+}
+.wave {
+    position: relative;
+    height: 120px;
+    background: url('wave.svg') repeat-x;
+    background-size: 200% auto;
+    animation: waveScroll 6s linear infinite;
+    opacity: 0.08;
+}
+@keyframes waveScroll {
+    0% { background-position-x: 0; }
+    100% { background-position-x: -200%; }
+}
+.welcome {
+    text-align: center;
+    padding: 2em;
+}
+.welcome h2 {
+    color: #b8860b;
 }
