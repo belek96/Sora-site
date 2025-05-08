@@ -1,48 +1,34 @@
 
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f5f0e6;
-    color: #333;
-    position: relative;
-}
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('images/subtle_waves_background.jpg');
+    background-image: url('images/subtle_waves_background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.06;
-    z-index: -2;
+    background-attachment: fixed;
+    color: #333;
 }
-.hero {
+
+header, section {
     text-align: center;
-    padding: 2em;
+    padding: 50px 20px;
 }
-.hero h1 {
+
+h1, h2 {
     color: #b8860b;
 }
+
 .wave {
-    position: relative;
-    height: 120px;
     background: url('wave.svg') repeat-x;
-    background-size: 200% auto;
-    animation: waveScroll 6s linear infinite;
-    opacity: 0.08;
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 100px;
+    animation: wave-animation 10s linear infinite;
 }
-@keyframes waveScroll {
-    0% { background-position-x: 0; }
-    100% { background-position-x: -200%; }
-}
-.welcome {
-    text-align: center;
-    padding: 2em;
-}
-.welcome h2 {
-    color: #b8860b;
+
+@keyframes wave-animation {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
