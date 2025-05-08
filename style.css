@@ -1,27 +1,32 @@
 
 body {
-    font-family: sans-serif;
-    background-color: #f5f0e6;
-    background-image: url('images/F6722BEE-1976-42BE-9342-1310E665F495.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    color: #3b2f1c; /* насыщенный тёплый коричневый, хорошо читается */
-    text-align: center;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/F6722BEE-1976-42BE-9342-1310E665F495.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: #2c2c2c;
+    line-height: 1.6;
     padding: 20px;
 }
 
-h1, h2 {
-    color: #8a5c16; /* более контрастный тёмно-золотистый */
+.content {
+    max-width: 800px;
+    margin: auto;
 }
 
-section {
-    background-color: rgba(255, 255, 255, 0.8); /* подложка для улучшения читаемости */
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+h1 {
+    color: #8B4513;
+    text-align: center;
+}
+
+h2 {
+    color: #A0522D;
+    text-align: center;
+}
+
+p {
+    color: #333;
+    text-align: center;
 }
