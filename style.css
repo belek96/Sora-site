@@ -1,18 +1,27 @@
 
 body {
-  font-family: sans-serif;
-  background-color: #f5f0e6;
-  background-image: url('images/F6722BEE-1976-42BE-9342-1310E665F495.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #333;
-  text-align: center;
-  padding: 20px;
+    font-family: sans-serif;
+    background-color: #f5f0e6;
+    background-image: url('images/F6722BEE-1976-42BE-9342-1310E665F495.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #3b2f1c; /* насыщенный тёплый коричневый, хорошо читается */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
-h1 {
-  color: #b8860b;
+
+h1, h2 {
+    color: #8a5c16; /* более контрастный тёмно-золотистый */
 }
-h2 {
-  color: #b8860b;
+
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* подложка для улучшения читаемости */
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
